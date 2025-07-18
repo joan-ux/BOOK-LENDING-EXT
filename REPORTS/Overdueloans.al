@@ -9,18 +9,18 @@ report 50110 "Overdue Books Report"
     {
         dataitem(Lending; "Lending")
         {
-            // Remove invalid DataItemTableView property
 
             column(StudentID; "Student ID") { }
             column(BookID; "Book ID") { }
-            column(Lending_Date; "Lending Date") { }
+            column(LendingDate; "Lending Date") { }
             column(ReturnDate; "Return Date") { }
 
             trigger OnPreDataItem()
             begin
-                // Filter for blank Return Date
-                SetRange("Return Date", '');
-                // Filter for Lending Date up to today
+                // Filter for overdue loans
+                SetRange("Return Date", 'Date', Today); // Return Date before today
+
+                // Filter for Lending Date
                 SetFilter("Lending Date", '..%1', Today);
             end;
         }

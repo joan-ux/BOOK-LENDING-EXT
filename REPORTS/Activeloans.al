@@ -1,4 +1,5 @@
 report 50140 "Active Loans Report"
+
 {
     ApplicationArea = All;
     UsageCategory = ReportsAndAnalysis;
@@ -8,7 +9,7 @@ report 50140 "Active Loans Report"
     {
         dataitem(Lending; Lending)
         {
-            DataItemTableView = where("Return Date" = const(''));
+            DataItemTableView = where("Retur n Date" = const(''));
 
             column("LendingID"; "Lending ID") { }
             column("StudentID"; "Student ID") { }
