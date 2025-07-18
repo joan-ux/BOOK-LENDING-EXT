@@ -1,0 +1,32 @@
+{
+  "id": "1850ef00-d4b2-4fc8-a843-f9cdbc4ce3e2",
+  "name": "BOOK LENDING EXT",
+  "publisher": "joantech",
+  "version": "1.0.0.0",
+  "brief": "Manage book lending operations",
+  "description": "An extension for managing book lending operations in a library system. It allows users to lend and return books, track due dates, and manage user accounts.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "26.0.0.0",
+  "application": "26.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "15.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
